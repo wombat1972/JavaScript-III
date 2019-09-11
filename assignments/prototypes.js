@@ -32,7 +32,7 @@ GameObject.prototype.destroy =function(){
 */
 
 function CharacterStats(charAttributes){
-  this.hp=charAttributes.hp;
+  this.healthPoints=charAttributes.healthPoints;
   this.name=charAttributes.name;
   GameObject.call (this, charAttributes);
 }
@@ -52,7 +52,7 @@ CharacterStats.prototype.takeDamage= function(){
 */
 
   function Humanoid(humanoidAttributes){
-    this.faction = humanoidAttributes.faction;
+    this.team = humanoidAttributes.team;
     this.weapons = humanoidAttributes.weapons;
     this.language = humanoidAttributes.language;
     CharacterStats.call (this, humanoidAttributes);
